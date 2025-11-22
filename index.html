@@ -1,122 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+  <meta charset="UTF-8">
+  <title>Resume - Aditya Bhagat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 24px 28px 40px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+    .subheading {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 16px;
+    }
+    .section {
+      margin-top: 24px;
+    }
+    .section h2 {
+      font-size: 18px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+    .section p {
+      margin: 4px 0;
+    }
+    ul {
+      margin-top: 4px;
+      margin-bottom: 4px;
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .header-links a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    .header-links a:hover {
+      text-decoration: underline;
+    }
+    .job-title, .edu-title {
+      font-weight: 600;
+    }
+    .meta-line {
+      font-size: 14px;
+      color: #555;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 12px;
+        padding: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1><b>Aditya Bhagat</b></h1>
-    <img src="./me.jpeg" alt="A picture of me" height="200">
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>Aditya Bhagat</h1>
+      <p class="subheading">
+        San Diego, CA · (619)-788-4662 ·
+        <a href="mailto:adibhagat9891@gmail.com">adibhagat9891@gmail.com</a>
+      </p>
+      <p class="header-links">
+        GitHub:
+        <a href="https://github.com/Adiiii03" target="_blank">https://github.com/Adiiii03</a><br>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/aditya-bhagat-369128252" target="_blank">
+          www.linkedin.com/in/aditya-bhagat-369128252
+        </a>
+      </p>
+    </header>
 
-    <h2> About Me</h2>
-    <p><i>Hi, I am a junior at San Diego State University pursuing a degree in computer science. 
-        My goal is to become a Software Engineer with a keen interest in Artificial Intelligence and Full-Stack Development. 
-        Eager to expand my knowledge and contribute to this fascinating field, 
-        I'm actively seeking any internship or research opportunity where I can apply my skills and learn from experienced professionals.
-    </i></p>
-    <hr />
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2>Education</h2>
+      <p class="edu-title">San Diego State University</p>
+      <p class="meta-line">Bachelor of Science in Computer Science · August 2022 – Present · San Diego, CA</p>
+      <p><strong>GPA:</strong> 3.55 (Dean’s List)</p>
+      <p>
+        <strong>Relevant Courses:</strong>
+        Algorithms, Data Structures, Operating Systems, Unix System Administration, Artificial Intelligence,
+        Cloud Computing, Machine Learning, Advanced Programming Languages, Database Theory, Discrete Mathematics
+      </p>
+    </section>
 
-    <h2><b>Education</b></h2>
-    <h3><u>High School, St. Mary's School - New Delhi,India</u></h3>
-    <p>Graduated with a 3.7/4.0 GPA, Awarded Certificate of Merit for securing 90% in the CBSE Board
-        Awarded Character Certificate For Good Morale</p>
+    <!-- SKILLS -->
+    <section class="section">
+      <h2>Certifications, Skills &amp; Interests</h2>
+      <p><strong>Certifications:</strong> LearnX Python Development Course Certification, AWS Certified Cloud Practitioner (In Progress)</p>
+      <p><strong>Programming Languages:</strong> Python, Java, C, C++, HTML, CSS, JavaScript, Bash, Bootstrap, MIPS, SQL</p>
+      <p><strong>Frameworks &amp; Tools:</strong> Flask, Bootstrap, Tailwind CSS, Firebase, Docker, Git/GitHub, Vercel, Render, AWS CL Services</p>
+      <p><strong>Core Skills:</strong> System Administration, Networking, Algorithms &amp; Data Structures, Cloud Deployment,
+        Full-Stack Web Development, Problem Solving, Adaptability, Team Collaboration</p>
+      <p><strong>Interests:</strong> Software Engineering, Cloud Computing, Web Development, AI &amp; Machine Learning</p>
+    </section>
 
-    <h3><u>Majoring in Computer Science, San Diego State University - San Diego,California</u></h3>    
-    <p>Cumulative GPA: 3.5/4.0</p>
-    <hr />
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2>Projects</h2>
 
-    <h2><b>Work Experience</b></h2>
-    <pre>
-        <h3><u>Desk Assistant/ Security Monitor, San Diego State University - San Diego</u>                              Nov 2023 - present</h3>
-    </pre>
-    <p>
-        <ul>
-            <li>Dedicated to delivering exceptional customer service to residents, their families, and guests. Maintaining a safe and welcoming environment for all residents and visitors.</li>
-            <li>The role requires a high level of professionalism, attention to detail, and commitment to safety and service.</li>
-        </ul>
-    </p>
+      <h3>Unix/Linux System Administration Experience</h3>
+      <ul>
+        <li>Installed, configured, and administered OpenBSD, FreeBSD, and AlmaLinux VMs.</li>
+        <li>Set up LDAP directory service, TLS certificates, DNS (BIND), NFS server, CUPS print server, mail server (SMTP), Postfix, automounting, SSH forwarding, cron automation, kernel builds, and PKI infrastructure.</li>
+        <li>Performed system hardening, patching, kernel builds, service configuration, and multi-OS integration.</li>
+      </ul>
 
-    <pre>
-        <h3><u>Volunteer, St. Mary's School</u>                                                                          May 2020 - Jan 2022</h3>
-    </pre>
-    <p>
-        <ul>
-            <li>Maintained operational facilities to serve program needs.</li>
-            <li>Coordinated distribution of household goods, clothes, and food to underprivileged people and families.</li>
-            <li>Developed and implemented policies and procedures to ensure compliance with regulations.</li>
-        </ul>
-    </p>
+      <h3>VisionLabel — Image Label Generator</h3>
+      <p><a href="https://visionlabel.onrender.com" target="_blank">https://visionlabel.onrender.com</a></p>
+      <ul>
+        <li>Built a full-stack Flask web application that detects and labels objects in uploaded images using AWS Rekognition.</li>
+        <li>Implemented dynamic bounding boxes and confidence scores via Pillow (PIL) and integrated Bootstrap 5 for a modern, responsive UI.</li>
+        <li>Deployed on Render showcasing cloud deployment and API integration skills.</li>
+      </ul>
 
-    <pre>
-        <h3><u>Volunteer, Navchetna Nirman Foundation</u>                                                               June 2019 - Jul 2020</h3>
-    </pre>
-    <p>
-        <ul>
-            <li>Supported engaging, fun, and smooth-running events by helping with organization and planning.</li>
-            <li>Used strong interpersonal communication skills to convey information to others.</li>
-            <li>Volunteered with groups and organizations to help make measurable differences for program recipients.</li>
-            <li>Did and encouraged a cleanliness drive in the area.</li>
-        </ul>
-    </p>
-    <hr />
+      <h3>Firebase Chat Room</h3>
+      <p><a href="https://real-time-chat-app-rose.vercel.app/" target="_blank">https://real-time-chat-app-rose.vercel.app/</a></p>
+      <ul>
+        <li>Developed a real-time chat application with message synchronization using Firebase Realtime Database and integrated user authentication via Google Auth, deployed using Vercel hosting.</li>
+        <li>Designed a responsive front-end UI using HTML, CSS, &amp; Tailwind, enabling real-time message updates and user interaction features like typing indicators and read receipts.</li>
+        <li>Gained practical experience in concurrent data handling, scalability, and user interface design for interactive real-time applications.</li>
+      </ul>
 
-    <h2><b>Projects</b></h2>
-    <pre>
-        <h3><u>Theater Ticketing System Project</u>                                                                          2024</h3>
-    </pre>
-    <p>
-        <ul>
-            <li>Created a detailed software requirements specif ication (SRS) for a Theater Ticketing System to streamline ticket purchasing through digital kiosks and an online website.</li>
-            <li>Includes general descriptions, architecture design with data management, test plan, and specif ic functional and non-functional requirements.</li>
-            <li>Created user interfaces for ticket purchasing, account management, and feedback submission.</li>
-        </ul>
-    </p>
+      <h3>Portfolio Website</h3>
+      <p><a href="https://adiiii03.github.io/Aditya-Portfolio/" target="_blank">https://adiiii03.github.io/Aditya-Portfolio/</a></p>
+      <ul>
+        <li>Designed and built a responsive personal portfolio website using HTML, CSS, and Bootstrap, ensuring a user-friendly interface across all devices.</li>
+        <li>Utilized custom CSS to create a visually appealing, clean, and modern design, providing an intuitive and engaging user experience.</li>
+        <li>Deployed via GitHub Pages with a clean UI showcasing skills and projects.</li>
+      </ul>
+    </section>
 
-    <pre>
-        <h3><u>Password Manager Project</u>                                                                                  2024</h3>
-    </pre>
-    <p>
-        <ul>
-            <li>Build an entire Password Manager interface using python where the user can save passwords, search passwords and generate passoword.</li>
-            <li>Save password function adds the password along with the username/email and the website the user wants to save in a JSON document.</li>
-            <li>Generate password function generates a random yet complex password on spot for the user.</li>
-            <li>Search function finds for the passwords for the website the user wants to know and displays if exists in the saved data.</li>
-        </ul>
-    </p>
-
-    <pre>
-        <h3><u>Snake Game</u>                                                                                                2024</h3>
-    </pre>
-    <p>
-        <ul>
-            <li>Build the classic Snake game from scratch using Python.</li>
-            <li>The game works seemlessly, while storing the high score in a csv file so its not lost after the game is re-run.</li>
-        </ul>
-    </p>
-
-    <pre>
-        <h3><u>Pong Game</u>                                                                                                 2024</h3>
-    </pre>
-    <p>
-        <ul>
-            <li>Build the classic Pong game from scratch using Python.</li>
-            <li>The game works using the keyboard buttons to control the paddle, while the ball randomly moves after getting hit.</li>
-        </ul>
-    </p>
-    <hr />
-
-    <h2><b>Other</b></h2>
-    <ul>
-        <li>
-            <a href="./achievements.html">Achievements</a>
-        </li>
-        <li>
-            <a href="./contact.html">Contact Me</a>
-        </li>
-    </ul>
-    <p> © Aditya Bhagat. All rights reserved.</p>
-
-
+    <!-- WORK EXPERIENCE -->
+    <section class="section">
+      <h2>Work Experience</h2>
+      <p class="job-title">Desk Assistant / Security Monitor</p>
+      <p class="meta-line">San Diego State University · November 2023 – May 2025 · San Diego, CA</p>
+      <ul>
+        <li>Provided exceptional customer service to residents, staff, and guests while maintaining secure building access.</li>
+        <li>Supported students and staff with technical issues and maintained clear communication channels across departments.</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
